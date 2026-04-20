@@ -1,22 +1,22 @@
 class Cascade < Formula
   desc "Terminal rhythm game with automatic beatmap generation"
   homepage "https://github.com/glebmatz/cascade"
-  version "0.5.0"
+  version "0.6.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/glebmatz/cascade/releases/download/v0.5.0/cascade-aarch64-apple-darwin.tar.gz"
-      sha256 "bffc64bc2a6f9d00018a1a67e591007027653f19ae472efc03d069993d74ecd4"
+      url "https://github.com/glebmatz/cascade/releases/download/v0.6.1/cascade-aarch64-apple-darwin.tar.gz"
+      sha256 "a91c71ea93300579b1a588f1ec759c358a3c2d5f530e88b4126e4848e357389b"
     else
-      url "https://github.com/glebmatz/cascade/releases/download/v0.5.0/cascade-x86_64-apple-darwin.tar.gz"
-      sha256 "b83beabb140f692b297fbaf977a0590d5b498cfa2fff6802f7934c396d767bdb"
+      url "https://github.com/glebmatz/cascade/releases/download/v0.6.1/cascade-x86_64-apple-darwin.tar.gz"
+      sha256 "fc37d80fece56753ddef5afc13952172da97cd044257b3d6b35c8c59a658511d"
     end
   end
 
   on_linux do
-    url "https://github.com/glebmatz/cascade/releases/download/v0.5.0/cascade-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "ecafd01af5f0ead15299ce673d5381d56a16acfce5107a70cd4b642b45d80b25"
+    url "https://github.com/glebmatz/cascade/releases/download/v0.6.1/cascade-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "87c84390466695b1c73c63877312a796bfde4789c0a699a0a710dc03194a0445"
   end
 
   def install
